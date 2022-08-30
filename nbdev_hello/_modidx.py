@@ -5,4 +5,6 @@ d = { 'settings': { 'branch': 'master',
                 'doc_host': 'https://schonbucher.github.io',
                 'git_url': 'https://github.com/schonbucher/nbdev-hello',
                 'lib_path': 'nbdev_hello'},
-  'syms': {'nbdev_hello.core': {'nbdev_hello.core.foo': ('core.html#foo', 'nbdev_hello/core.py')}}}
+  'syms': { 'nbdev_hello.core': {'nbdev_hello.core.foo': ('core.html#foo', 'nbdev_hello/core.py')},
+            'nbdev_hello.nbdev_hello': { 'nbdev_hello.nbdev_hello.psfoo': ('philipp.html#psfoo', 'nbdev_hello/nbdev_hello.py'),
+                                         'nbdev_hello.nbdev_hello.say_hello': ('philipp.html#say_hello', 'nbdev_hello/nbdev_hello.py')}}}

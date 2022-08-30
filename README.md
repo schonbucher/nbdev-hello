@@ -21,3 +21,19 @@ Fill me in please! Don’t forget code examples:
 ```
 
     2
+
+``` python
+from nbdev_hello.nbdev_hello import *
+```
+
+``` python
+psfoo(10)
+```
+
+    100
+
+``` python
+say_hello("Philipp")
+```
+
+    'Hello Philipp!'
