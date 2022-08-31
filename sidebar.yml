@@ -3,3 +3,6 @@ website:
     contents:
       - index.ipynb
       - 00_philipp.ipynb
+      - section: nbdev_hello
+        contents:
+          - nbdev_hello/quartotest.ipynb
