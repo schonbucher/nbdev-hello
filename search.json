@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbdev-hello",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "nbdev-hello",
+    "section": "Install",
+    "text": "Install\npip install nbdev_hello"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "nbdev-hello",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+10\n\n11\n\n\n\nfrom nbdev_hello.nbdev_hello import *\n\n\npsfoo(10)\n\n100\n\n\n\nsay_hello(\"Philipp\")\n\n'Hello Philipp!'\n\n\nThis is an integral that I know can be solved \\[ \\int_0^{\\infty} \\sin(x) \\frac{1}{x} dx = 0 \\] but I am pretty sure the answer is not zero.\nYou probably want to substitute variables: \\(y = \\ln x\\) and \\(dy/dx = 1/x\\), hence \\[ \\int_0^{\\infty} \\sin(x) \\frac{1}{x} dx =\n\\int_{-\\infty}^{\\infty} \\sin(e^y) dy\n\\] Hmm, not sure that helped a lot… We now have the \\(e^y\\) term in the \\(\\sin()\\).\n\n1+1\n\n2\n\n\n\n\n\n\nflowchart LR\n  A[Hard edge] --> B(Round edge)\n  B --> C{Decision}\n  C --> D[Result one]\n  C --> E[Result two]"
+  },
+  {
+    "objectID": "nbdev_hello.html",
+    "href": "nbdev_hello.html",
+    "title": "Philipps notebook module",
+    "section": "",
+    "text": "source\n\npsfoo\n\n psfoo (x)\n\n\npsfoo(17)\n\n289\n\n\n\nsource\n\n\nsay_hello\n\n say_hello (to)\n\nSay hello to somebody\n\nsay_hello(\"world\")\n\n'Hello world!'\n\n\n\nassert psfoo(9)==81\nassert psfoo(-2)== 4\nassert abs(psfoo(0.1) - 0.01) <1e-8\n\n\npsfoo(0.1)\n\n0.010000000000000002\n\n\n\nassert say_hello(\"Philipp\")==\"Hello Philipp!\"\n\nfloating point arithmetic actually causes some differences here, hence the need to adjust the tests accordingly. For example:\n\nfrom fastcore.test import *\n\n\ntest_close(psfoo(0.1),0.01)"
+  }
+]
